@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamid Siddiqi - Final Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Sidebar Settings -->
+  <header class='sidebar-nav' id='sidebar-nav'>
+    <nav id='hamburgerContainer'>
+        <img src='images/settings.svg' class='hamburger-btn' id='hamburgerBtn' alt="">
+    </nav>
+    
+    <img src='images/close.svg' class='close-btn' id='closeBtn' alt="Close Button">
+    
+    <div id='navList'>
+       <h2>Change Settings</h2>
+        <form>
+            <div class='input'>
+                <input type="checkbox" id='hourClock'>
+                <label> 24-Hour Clock</label>
+            </div>
+            <div class='input'>
+                <input type="checkbox" id='displayCurrentDate'>
+                <label> Current Date</label><br>
+            </div>
+            
+            <div>
+                <button type='submit' id='saveBtn'>Save</button>
+            </div>
+        </form>
+    </div>
+  </header>
+
+    <div id='container' class='nasa-img'>
+
+        <div id='img-container'></div>
+
+        <!-- Greeting Message -->
+        <div id='message'></div>
+
+        <!-- Clock -->
+        <div id='clock'></div>
+        
+        <!-- Date Display -->
+        <div id='showingDate'></div>
+
+        <!-- More -->
+        <div id='more-info'>
+            <div class='more-container'>
+                <button id='moreBtn' class='close'></button>
+            </div>
+            
+            <!-- More Data -->
+            <div id='more-bar'>
+                <div class='dayofweek'>
+                     <h3>Day of the Week:</h3>
+                </div>
+                <div class='dayofmonth'>
+                    <h3>Day of the Month:</h3>
+                </div>
+                <div class='dayofyear'>
+                    <h3>Day of the Year:</h3>
+                </div>
+                <div class='currentyear'>
+                    <h3>Current Year:</h3>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2021 Hamid Siddiqi</p>
+        </footer>
+    </div>
+
+    <script src='script.js'></script>
+</body>
+</html>
